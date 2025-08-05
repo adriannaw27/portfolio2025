@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <style>
+
+    body {
+        background: linear-gradient(51deg, rgb(243, 77, 77), #a174f4);
+        background-size: 400% 400%;
+        -webkit-animation: gradientbackground 32s ease infinite;
+        -moz-animation: gradientbackground 32s ease infinite;
+        animation: gradientbackground 32s ease infinite;
+    }
+
+    @-webkit-keyframes gradientbackground {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+
+    @-moz-keyframes gradientbackground {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+
+    @keyframes gradientbackground {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+
+    .title {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px #a174f4, 0 0 1em #a174f4, 0 0 0.2em blue
+    }
+
+    .head {
+        font-family: 'Nova Square', sans-serif;
+    }
+
+    .detail {
+        font-size: 1rem;
+        font-family: 'Nova Square', sans-serif;
+    }
+
+    .head_container {
+        display: flex;
+        justify-content: space-evenly
+    }
+
+    .lineone {
+        height: 3px;
+        color: black;
+        background: black;
+        border: black;
+    }
+
+    @media (max-width: 600px) {
+        .head_container {
+            display: block;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px;
+    }
+
+    .text {
+        font-family: 'Lora', serif;
+        font-size: 0.8rem;
+    }
+
+    .second {
+        padding-top: 10px;
+    }
+
+    .subdetail {
+        font-size: 0.8rem;
+        font-family: 'Nova Square', sans-serif;   
+    }
+
+    .subtext {
+        font-size: 0.7rem;
+        font-family: 'Lora', serif;
+        padding-left: 8px;
+        padding-right: 8px;
+        line-height: 1.4;
+        margin-top:-8px;
+    }
+
+    @media (max-width: 900px) {
+        .grid_container {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+    }
+    }
+
+    @media (max-width: 400px) {
+        .grid_container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }   
+
+        .left {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-start: 2;
+        }
+    }
+
+    .right {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .submain {
+        font-size: 0.9rem;
+        font-family: 'Nova Square', sans-serif; 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 900px) {
+        .submain {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .description {
+        text-align: justify;
+        line-height: 1.4;
+        font-family: 'Lora', serif;
+        font-size: 0.8rem;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top:-8px;
+    }
+
+    @media (max-width: 900px) {
+        .description {
+            padding-left: 50px;
+            padding-right: 20px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .description {
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+    }
+
+    .date {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 0.8rem;
+        font-family: 'Nova Square', sans-serif;
+        margin-top:-8px;
+        background: black;
+        color: white;
+        padding: 7px;
+        border-radius: 15px;
+    }
+
+    @media (max-width: 900px) {
+        .date {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .another {
+        margin-top: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="head title" >ADRIANNA WASIK</h1>
+    <div class="head_container">
+        <h2 class="head detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg> Berlin, Germany
+        </h2>
+        <h2 class="head detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-passport-fill" viewBox="0 0 16 16">
+                <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                <path d="M2 3.252a1.5 1.5 0 0 1 1.232-1.476l8-1.454A1.5 1.5 0 0 1 13 1.797v.47A2 2 0 0 1 14 4v10a2 2 0 0 1-2 2H4a1.995 1.995 0 0 1-1.51-.688 1.493 1.493 0 0 1-.49-1.11V3.253ZM5 8a3 3 0 1 0 6 0 3 3 0 0 0-6 0m0 4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5"/>
+              </svg> Polish
+        </h2>
+        <h2 class="head detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+              </svg> wasikadriannamaria@gmail.com
+        </h2>
+    </div>
+    <hr class="lineone" />
+    <div class="grid_container">
+        <div class="left">
+            <h3 class="detail">Languages</h3>
+                <p class="text">English - C1</p>
+                <p class="text">German - B2</p>
+                <p class="text">Polish - Native</p>
+            <h3 class="detail second">Skills</h3>
+                <p class="text">SQL</p>
+                <p class="text">Python</p>
+                <p class="text">Jupyter Notebook</p>
+                <p class="text">Tableau</p>
+                <p class="text">GCP</p>
+                <p class="text">Google Analytics</p>
+                <p class="text">Visual Studio Code</p>
+                <p class="text">Monetate</p>
+                <p class="text">Looker</p>
+                <p class="text">Superset</p>
+                <p class="text">Salesforce</p>
+                <p class="text">Contentsquare</p>
+                <p class="text">Python</p>
+                <p class="text">GIMP</p>
+                <p class="text">Bash</p>
+                <p class="text">CAD</p>
+                <p class="text">HTML</p>
+                <p class="text">CSS</p>
+            <h3 class="detail second">Activities</h3>
+                <h4 class="subdetail">VOLUNTEER</h4>
+                    <p class="subtext">(08.2019 - 02.2022)<br/>
+                        Foundation of the International Movement for Animals Viva!</p>
+                <h4 class="subdetail">MEMBER</h4>
+                    <p class="subtext">(08.2019 - 01.2023)<br/>
+                        Feminist Association<br/> 
+                        Gals4Gals Lodz</p>
+        </div>
+        <div class="right">
+            <h3 class="detail main">Professional Experience</h3>
+                <h4 class="submain">PRODUCT ANALYST at 1&1 MAIL & MEDIA APPLICATIONS SE (Germany, Remote)</h4>
+                    <h5 class="date">January 2024 - Now</h5>
+                        <ul class="description">
+                            <li>Digital product data analysis using SQL and Python.</li>
+                            <li>Work with a diverse toolset, including Trino, SQL Server, Hive, Impala, IntelliJ, GitLab, Jupyter Notebook, PostgreSQL, Grafana, internal company tools, Excel, Tableau, Confluence, and Jira.</li>
+                            <li>Implementation of new features tracking and analysis of their performance.</li>
+                            <li>Close collaboration with Backend Development Teams, providing data-driven product performance monitoring, exploratory data analysis to identify product weaknesses, and process optimization.</li>
+                            <li>Being reporting owner & primary contact for multiple Product Teams.</li>
+                            <li>Ensuring data quality and process optimization in collaboration with Data, BI, and Engineering Teams.</li>
+                            <li>Supporting multiple additional teams, including Partner Management and Marketing, with data insights.</li>
+                            <li>Collaboration with Data Scientists and conducting exploratory analyses using Python.</li>
+                            <li>Supporting user testing, including A/B testing, to evaluate product performance.</li>
+                            <li>Maintaining reporting documentation for both technical and non-technical stakeholders.</li>
+                        </ul>
+                <h4 class="submain">DATA ANALYST - DIGITAL PRODUCTS at LOVEHONEY GROUP (Berlin)</h4>
+                    <h5 class="date">August 2023 - December 2023</h5>
+                        <ul class="description">
+                            <li>Extensive digital products data analysis (using, among others, BigQuery, Google Analytics, Monetate, Looker, Tableau, SFCC, R, Superset).</li>
+                            <li>Extensive user journey and behaviour analysis (using Google Analytics, GTM, Contentsquare etc.).</li>
+                            <li>Digital product features A/B testing - determining test objects, cooperation with developers and storefront, planning and managing A/B tests, data analysis.</li>
+                            <li>Development and implementation of end-to-end process for data discovery for optimization of digital products.</li>
+                            <li>Evaluation of digital product optimizations using data analysis tools and reporting the results to stakeholder at various levels.</li>
+                            <li>Working in the agile environment - Kanban, Jira, Confluence, and Atlassian etc.</li>
+                        </ul>
+                <h4 class="submain another">BUSINESS INTELLIGENCE ANALYST at OCEANSAPART (Berlin)</h4>
+                    <h5 class="date">March 2022 - July 2023</h5>
+                        <ul class="description">
+                            <li>Webshops and social media data analysis and visualization - BigQuery, GCP, Tableau, Google Sheets, Data Studio, Google Analytics, Python.</li>
+                            <li>Google Cloud BQ data warehouse managing and supporting raw data organization.</li>
+                            <li>Data automation, creating dashboards, reports and tools (in fields of e.g. forecasting, KPIs, launch analysis), improving and fixing existing ones.</li>
+                            <li>Close colaboration (e.g. understanding and explaining data trends and patterns, providing actionable insights and supporting decision making process) with product and marketing teams (e.g. CRM, paid social, SEM, influencer marketing).</li>
+                            <li>Managing internal stakeholders (e.g. C-levels, management) and external consultants.</li>
+                            <li>Experience in an agile working environment - Kanban, Jira, Confluence, and Atlassian.</li>
+                            <li>Implementing innovative ideas, algorithms, and tools to improve data analysis quality.</li>
+                            <li>A/B testing (e.g. the most effective layout of products in the webshop).</li>
+                        </ul>
+                <h4 class="submain another">DATA ANALYST - INTERNSHIP IN TECHNICAL DEPARTMENT at WHIRLPOOL COMPANY POLAND</h4>
+                    <h5 class="date">October 2021 - January 2022, working student contract</h5>
+                        <ul class="description">
+                            <li>Infrastructure data analysis - finding correlations, correcting errors, analyzing trends, creating graphs, calculating vectors and matrices.</li>
+                            <li>Visualizing data (in Google Sheet) - optimization of the data analysis process, data grouping, generating reports on infrastructure - and presenting to stakeholders.</li>
+                            <li>Searching for solutions to reduce media consumption – participation in and creation of thematic projects.</li>
+                        </ul>
+                <h4 class="submain another">TRAINEE AT THE RESEARCH AND DEVELOPMENT LABORATORY at ATLAS</h4>
+                    <h5 class="date">August 2021 - September 2021, working student short-term contract</h5>
+                <h4 class="submain another">CUSTOMER SERVICE CONSULTANT at CALZEDONIA GROUP</h4>
+                    <h5 class="date">February 2021 - July 2021; part-time student's job</h5>
+        </div>
+    </div>
+    <hr class="lineone" />
+        <h3 class="detail main">Academic Background</h3>
+            <h4 class="submain">BUSINESS INTELLIGENCE, IU INTERNATIONAL UNIVERSITY OF APPLIED SCIENCES</h4>
+                <h5 class="date">Berlin, Germany | October 2023 - December 2024 | Master of Science</h5>
+            <h4 class="submain">ENGINEERING IN CHEMISTRY, LODZ UNIVERSITY OF TECHNOLOGY</h4>
+                <h5 class="date">Lodz, Poland | October 2018 - February 2022 | Bachelor of Science</h5>
+        <h3 class="detail main">Additional courses</h3>
+            <h4 class="submain">The Complete Python Bootcamp From Zero to Hero in Python</h4>
+                <h5 class="date">Udemy | 2025</h5>
+            <h4 class="submain">Python for Data Science and Machine Learning Bootcamp</h4>
+                <h5 class="date">Udemy | 2025</h5>
+</body>
+</html>
